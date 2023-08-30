@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+$accent-color: #3689fc;
+
+:root {
+  --accent: #{$accent-color};
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+
+  &__icon-link {
+    font-size: 2rem;
+    user-select: none;
+
+    &:hover {
+      color: var(--accent);
+      cursor: pointer;
+    }
+  }
+
+  &__copyright {
+    margin-top: 8px;
+  }
+}
