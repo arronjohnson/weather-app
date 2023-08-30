@@ -11,7 +11,31 @@
     <h1 class="header__heading">Weather Forecast</h1>
   </header>
   <main class="main">
-    <section></section>
+    <article class=search>
+      <input class="search__input" type="search" name="search" id="search"
+        placeholder="Enter a town or city">
+      <button class="search__button">Search</button>
+    </article>
+    <article class="weather-card">
+      <section class="weather-card__forecast">
+        <img src="#" alt="" class="weather-card__icon">
+        <p class="weather-card__temp"></p>
+        <section class="weather-card__units">
+          <span class="weather-card__unit weather-card__unit--selected" data-unit="C">°C</span>
+          <span class="weather-card__seperator"> | </span>
+          <span class="weather-card__unit" data-unit="F">°F</span>
+        </section>
+        <section class="weather-card__conditions">
+          <p class="weather-card__precipitation"></p>
+          <p class="weather-card__humidity"></p>
+          <p class="weather-card__wind"></p>
+        </section>
+      </section>
+      <section class="weather-card__location">
+        <h2 class="weather-card__city"></h2>
+        <p class="weather-card__condition"></p>
+      </section>
+    </article>
   </main>
   <footer class="footer">
     <section class="footer__icons-container">
@@ -32,7 +56,7 @@
         <i class="fa-solid fa-envelope"></i>
       </a>
     </section>
-    <p class="footer__copyright">Copyright © Arron Johnson 2022</p>
+    <p class="footer__copyright">Copyright © Arron Johnson 2023</p>
   </footer>
 </body>
 </html>
