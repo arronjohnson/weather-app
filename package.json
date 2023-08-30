@@ -1,0 +1,44 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress",
+    "prod": "webpack --mode=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve --open",
+    "gh-pages": "git subtree push --prefix dist origin gh-pages",
+    "diff": "git diff -- ':!dist'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arronjohnson/weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arronjohnson/weather-app/issues"
+  },
+  "homepage": "https://github.com/arronjohnson/weather-app#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "eslint": "^8.46.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "prettier": "^3.0.1",
+    "sass": "^1.64.1",
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
