@@ -1,7 +1,7 @@
 export default async function getWeatherData(location) {
   try {
     const response = await fetch(
-      `https://api.weatherapi.com/v1/current.json?key=1e9bcfae8abd4e01b81104420232908&q=${location}&aqi=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=1e9bcfae8abd4e01b81104420232908&q=${location}&days=1&aqi=no&alerts=no`,
       { mode: 'cors' },
     );
 
