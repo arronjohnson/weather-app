@@ -11,19 +11,7 @@ export default async function getWeatherData(location) {
       throw new Error('Invalid location');
     }
 
-    const data = await response.json();
-    return {
-      icon: `https:${data.current.condition.icon}`,
-      tempC: data.current.temp_c,
-      tempF: data.current.temp_f,
-      precipitation: data.current.precip_mm,
-      humidity: data.current.humidity,
-      wind: data.current.wind_mph,
-      city: data.location.name,
-      country: data.location.country,
-      time: data.current.last_updated,
-      condition: data.current.condition.text,
-    };
+    return await response.json();
   } catch (error) {
     alert('Invalid location, please use format city country, e.g. London UK');
     return undefined;
