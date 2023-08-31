@@ -191,3 +191,35 @@ p {
     margin-top: 8px;
   }
 }
+
+@media (max-width: 600px) {
+  .weather-card {
+    display: grid;
+    gap: 16px;
+    grid-template:
+      'location'
+      'forecast'
+      / 1fr;
+
+    &__forecast {
+      align-items: unset;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__temp-container {
+      align-self: center;
+    }
+
+    &__location {
+      grid-area: location;
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .main {
+    margin-top: 32px;
+  }
+}
